@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
+<body>
+<script src="avue.js"></script>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<div id="editor">
+  <textarea :value="input" @input="update"></textarea>
+  <div v-html="compiledMarkdown"></div>
+</div>
+</body>
+</html>
